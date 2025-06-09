@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Síntomas del Bullying</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -50px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: rise 20s linear infinite;
+    }
+
+    @keyframes rise {
+      0% {transform: translateY(0);}
+      100% {transform: translateY(-1200px);}
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      backdrop-filter: blur(10px);
+      color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+
+    footer {
+      background-color: rgba(0,0,0,0.3);
+    }
+
+    .nav-link {
+      color: #fff !important;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Burbujas animadas -->
+<div class="bubble" style="left: 10%; animation-duration: 15s;"></div>
+<div class="bubble" style="left: 25%; animation-duration: 25s; width: 60px; height: 60px;"></div>
+<div class="bubble" style="left: 45%; animation-duration: 20s;"></div>
+<div class="bubble" style="left: 65%; animation-duration: 22s; width: 20px; height: 20px;"></div>
+<div class="bubble" style="left: 85%; animation-duration: 18s;"></div>
+
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-4">
+  <a class="navbar-brand fw-bold" href="#">Síntomas del Bullying</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="menuNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="#sintomas">Síntomas</a></li>
+      <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+      <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Encabezado -->
+<header class="text-center text-white py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Síntomas del Bullying</h1>
+    <p class="lead">Detectar los signos puede marcar la diferencia.</p>
+  </div>
+</header>
+
+<!-- Sección de Síntomas -->
+<section id="sintomas" class="container py-5">
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card p-4 h-100">
+        <h4>Físicos</h4>
+        <ul>
+          <li>Moretones, heridas o rasguños inexplicables.</li>
+          <li>Dolores frecuentes sin causa médica aparente.</li>
+          <li>Cambios en los hábitos de sueño o alimentación.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 h-100">
+        <h4>Emocionales</h4>
+        <ul>
+          <li>Tristeza persistente o llanto frecuente.</li>
+          <li>Baja autoestima o sentimientos de inutilidad.</li>
+          <li>Ansiedad, depresión o aislamiento emocional.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 h-100">
+        <h4>Sociales y Escolares</h4>
+        <ul>
+          <li>Rechazo a asistir a la escuela.</li>
+          <li>Pérdida de amistades o aislamiento social.</li>
+          <li>Disminución del rendimiento académico.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios -->
+<section id="testimonios" class="container py-5">
+  <h2 class="text-center mb-4">Testimonios Reales</h2>
+  <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="card p-4 mx-auto" style="max-width: 700px;">
+          <blockquote class="blockquote text-center">
+            <p>"Notamos que nuestro hijo estaba más callado y evitaba salir. Resultó que estaba siendo acosado."</p>
+            <footer class="blockquote-footer text-white">Padres de Santiago, 13 años</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card p-4 mx-auto" style="max-width: 700px;">
+          <blockquote class="blockquote text-center">
+            <p>"Empecé a faltar al colegio por miedo. Nadie notaba cómo me sentía hasta que me animé a hablar."</p>
+            <footer class="blockquote-footer text-white">Valeria, 14 años</footer>
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Video Educativo -->
+<section id="video" class="container py-5 text-center">
+  <h2 class="mb-4">Video Educativo</h2>
+  <div class="ratio ratio-16x9">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/GI2r-Cr8tV8?si=SJnxrAOCG-9heUu-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Pie de página -->
+<footer class="text-center text-white py-4">
+  <p class="mb-0">© 2025 Consciencia Escolar | Detección y apoyo al estudiante</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
